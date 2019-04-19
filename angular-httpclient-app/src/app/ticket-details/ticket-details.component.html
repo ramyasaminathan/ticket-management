@@ -1,0 +1,44 @@
+<div class="container custom-container-2">
+
+    <!-- Show it when there is no ticket -->
+    <div class="no-data text-center" *ngIf="Ticket == {}">
+      <p>There is no ticket added yet!</p>
+      <button class="btn btn-outline-primary" routerLink="/create-ticket">Create Ticket</button>
+    </div>
+  
+    <!-- Tickets list table, it hides when there is no ticket -->
+    
+      <h3 class="mb-3 text-center">Ticket Details</h3>
+  
+      <div class="col-md-12">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col">Ticket Id</th>
+              <th scope="col">Category</th>
+              <th scope="col">Subject</th>
+              <th scope="col">Creator email</th>
+              <th scope="col">Created date</th>
+              <th scope="status">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+              <td>{{Ticket.id}}</td>
+              <td>{{Ticket.category}}</td>
+              <td>{{Ticket.subject}}</td>
+              <td>{{Ticket.creator_email}}</td>
+              <td>{{Ticket.created_date}}</td>
+              <td>{{Ticket.status}}</td>
+              <td>
+                <span class="update" routerLink="/update-ticket/{{Ticket.id}}">Update</span>
+              </td>
+            
+          </tbody>
+        </table>
+        
+    </div>
+  
+  </div>
+  
+

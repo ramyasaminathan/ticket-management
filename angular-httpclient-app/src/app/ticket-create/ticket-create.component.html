@@ -1,0 +1,37 @@
+<div class="container custom-container">
+  <div class="col-md-12">
+    <h3 class="mb-3 text-center">Create Ticket</h3>
+
+    <div class="form-group row">
+      <label for="ticketDetails.category" class = "col-sm-2 col-form-label" > Category </label>
+      <div class="col-sm-10">
+      <select [(ngModel)]="ticketDetails.category" class="form-control">
+        <option>General</option>>
+        <option>Software</option>
+        <option>Hardware</option>
+      </select>
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label for="ticketDetails.creator_email" class = "col-sm-2 col-form-label" >Email</label>
+      <div class="col-sm-10">
+      <input type="email" [(ngModel)]="ticketDetails.creator_email" class="form-control" placeholder="Email">
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label for="ticketDetails.subject" class = "col-sm-2 col-form-label" >Subject</label>
+      <div class="col-sm-10">
+      <input type="text" [(ngModel)]="ticketDetails.subject" class="form-control" placeholder="Subject">
+    </div>
+  </div>
+
+    <div class="form-group">
+      <div class="col-sm-8 text-center">
+        <button class="btn btn-success btn-lg btn-block" (click)="addTicket()">Create Ticket</button>
+      </div>
+    </div>
+
+  </div>
+</div>
