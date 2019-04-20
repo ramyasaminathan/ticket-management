@@ -1,0 +1,26 @@
+[
+    {   
+        "id" : "ABC-123456",
+        "category" : "General",
+        "subject" : "could not login to the system",
+        "creator_email" : "emp1@zyllu.com",
+        "created_date" : "12-3-2019",
+        "status" : "Open"
+    },
+    {
+        "id" : "BCD-123456",
+        "category" : "Software",
+        "subject" : "could not update anti-virus sw",
+        "creator_email" : "emp2@zyllu.com",
+        "created_date" : "15-3-2019",
+        "status" : "In Progress"
+    },
+    {
+        "id" : "DFG-123456",
+        "category" : "Hardware",
+        "subject" : "system is getting hot",
+        "creator_email" : "emp3@zyllu.com",
+        "created_date" : "20-3-2019",
+        "status" : "Assigned"
+    }
+]
