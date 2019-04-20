@@ -73,7 +73,7 @@ function loadTableFromFile(file) {
                 ticket.status);
         docClient.put(params, function(err, data) {
             if (err) {
-                console.error("Unable to add Employee", ticket.id, ". Error JSON:", JSON.stringify(err, null, 2));
+                console.error("Unable to add Ticket", ticket.id, ". Error JSON:", JSON.stringify(err, null, 2));
             } else {
                 console.log("PutItem succeeded:", ticket.id);
             }
@@ -83,7 +83,7 @@ function loadTableFromFile(file) {
 
 function init() {
     //deleteTable();
-    createTable();
+    //createTable();
     //loadTableFromFile('./ticketsData.json');
     
 }
@@ -258,9 +258,9 @@ function deleteTicket(ticketId, res) {
 }
 
 module.exports = {
-   //createTable,
-   //deleteTable,
-   //loadTableFromFile
+   createTable,
+   deleteTable,
+   loadTableFromFile,
    init,
    getAllTickets,
    getTicketById,

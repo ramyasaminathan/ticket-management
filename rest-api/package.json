@@ -3,7 +3,11 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "db_start": "cd ../dynamoDb && java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar && cd ../rest-api",
+    "tbl_create": "cd dbInitScripts && node createTable.js && cd ../",
+    "tbl_load_from_file": "cd dbInitScripts && node loadTablefromFile.js && cd ../",
+    "tbl_delete": "cd dbInitScripts && node deleteTable.js && cd ../"
   },
   "dependencies": {
     "aws-sdk": "^2.434.0",
