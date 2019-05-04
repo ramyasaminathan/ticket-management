@@ -21,6 +21,9 @@ export class TicketsListComponent implements OnInit {
   loadTickets() {
     return this.restApi.getTickets().subscribe((data: {}) => {
       this.Ticket = data;
+      for (let ticket of this.Ticket) {
+        ticket.status="Assigned";
+      }
     })
   }
 
