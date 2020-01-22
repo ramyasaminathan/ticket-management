@@ -2,7 +2,7 @@
 Single page web application to perform CRUD operations.
 ## Steps to run
 ### Setup DynamoDB
-Download DynamoDB and extract the contents in below path.
+Download DynamoDB and extract the contents in below path
 ```bash
 cd ticket-management/dynamoDb
 tar -xzvf <dynamodb.tar.gz>
