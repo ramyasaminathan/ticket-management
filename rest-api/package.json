@@ -10,7 +10,7 @@
     "tbl_delete": "cd dbInitScripts && node deleteTable.js && cd ../"
   },
   "dependencies": {
-    "aws-sdk": "^2.434.0",
+    "aws-sdk": "^2.814.0",
     "bootstrap": "^4.3.1",
     "cookie-parser": "~1.4.3",
     "cors": "^2.8.5",
